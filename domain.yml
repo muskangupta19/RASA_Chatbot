@@ -1,0 +1,61 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - crisis_sick_leave_1
+  - crisis_sick_leave_2
+  - crisis_sick_leave_3
+  - crisis_sick_leave_4
+  - crisis_sick_leave_5
+  - special_leave_1
+  - special_leave_2
+  - special_leave_3
+  - special_leave_4
+  - special_leave_5
+  - special_leave_6
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_did_that_help:
+  - text: "Did that help you?"
+  utter_happy:
+  - text: "Great, carry on!"
+  utter_goodbye:
+  - text: "Bye"
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_crisis_sick_leave_1:
+  - text: "It is an extraordinary benefit intended to cover extraordinary needs caused by the pandemic, such as government-mandated quarantines, any exposure to disease and illness or time needed to get a COVID-19 vaccine."
+  utter_crisis_sick_leave_2:
+  - text: "Crisis leave is 15 working days, in addition to Dell's ordinary time off programs."
+  utter_crisis_sick_leave_3:
+  - text: "Yes, you can use this crisis leave to care for a family member who is sick or quarintined."
+  utter_crisis_sick_leave_4:
+  - text: "If you are a Dell Employee (including Dell, Dell EMC, Virtustream, RASA, Boomi) then you are eligible for crisis leave."
+  utter_crisis_sick_leave_5:
+  - text: "Please go to MY HR in your portal where you can chat with HR representative or open a case. A local HR advisor will be able to provide the guidance needed on any documentation required for crisis sick pay time according to country regulations."
+  utter_special_leave_1:
+  - text: Prior to the utilization of COVID-19 special leave team members are required to utilize available crisis leave and sick leave. If available crisis leave and sick leave are insufficient to cover the required leave of absence the team member’s leave account will be credited with ‘COVID-19 Special Leave’ to cover the remaining days. Weekly offs and holidays that are falling in between would be considered as part of the leave.
+  utter_special_leave_2:
+  - text: team members that are COVID-19 positive are entitled to take specail leave.
+  utter_special_leave_3:
+  - text: Special leave can be taken from 28 calendar days of paid leave from the date of the positive test report.
+  utter_special_leave_4:
+  - text: Under no circumstances will team members that are COVID-19 positive be allowed to visit the office, customer locations, partners etc. Team members will also not be allowed to carry out any work-related activities in any official or unofficial capacity which may pose potential risk of spreading the virus until he or she has completely recovered.
+  utter_special_leave_5:
+  - text: Team members may start working from home post completion of 28 days of absence. After this they can rejoin the office.
+  utter_special_leave_6:
+  - text: You are required to submit to your leader a report that deems that you are COVID-19 negative.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

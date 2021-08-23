@@ -1,0 +1,73 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: leave path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: crisis_sick_leave_1
+  - action: utter_crisis_sick_leave_1
+  - intent: crisis_sick_leave_2
+  - action: utter_crisis_sick_leave_2
+  - intent: crisis_sick_leave_3
+  - action: utter_crisis_sick_leave_3
+  - intent: crisis_sick_leave_4
+  - action: utter_crisis_sick_leave_4
+  - intent: crisis_sick_leave_5
+  - action: utter_crisis_sick_leave_5
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: special path_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: special_leave_1
+  - action: utter_special_leave_1
+  - intent: special_leave_2
+  - action: utter_special_leave_2
+  - intent: special_leave_3
+  - action: utter_special_leave_3
+  - intent: special_leave_4
+  - action: utter_special_leave_4
+  - intent: special_leave_5
+  - action: utter_special_leave_5
+  - intent: special_leave_6
+  - action: utter_special_leave_6
+  - action: utter_did_that_help
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

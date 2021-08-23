@@ -1,0 +1,159 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+ 
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: crisis_sick_leave_1
+  examples: |
+    - What is sick leave?
+    - What is crisis leave?
+    - What is crisis sick leave?
+
+- intent: crisis_sick_leave_2
+  examples: |
+    - For how long can I take sick leave?
+    - For how long can I take crisis leave?
+    - For how long can I take crisis sick leave?
+
+- intent: crisis_sick_leave_3
+  examples: |
+    - Can I take crisis leave to care for a family member?
+    - Can I take sick leave to care for a family member?
+    - Can I take crisis sick leave to care for a family member?
+
+- intent: crisis_sick_leave_4
+  examples: |
+    - Am I eligible for sick leave?
+    - Am I eligible for crisis leave?
+    - Am I eligible for crisis sick leave?
+
+- intent: crisis_sick_leave_5
+  examples: |
+    - Is there any documentation required for taking crisis leave?
+    - Is there any documentation required to request crisis leave?
+    - Is there any paper work required for taking crisis leave?
+
+- intent: special_leave_1
+  examples: |
+    - What is special leave?
+    - Special leave
+    - special leave?
+- intent: special_leave_2
+  examples: |
+    - Who can take special leave?
+    - Can I take special leave?
+    - Am I eligible for special leave?
+- intent: special_leave_3
+  examples: |
+    - For how long can I take special leave?
+    - period of special leave
+    - duration of special leave
+    - For how many days can I take special leave?
+- intent: special_leave_4
+  examples: |
+    - Will I be allowed to visit the office during special leave?
+    - Will I be allowed to visit the office?
+    - Can I attend office?
+    - What work I have to do during special leave?
+    - Should I do any work in specail leave?
+    - Should I work?
+    - Is there any need to do any kind of work?
+- intent: special_leave_5
+  examples: |
+    - When can I rejoin the office?
+    - When can I resume my work?
+    - When can I return to office?
+- intent: special_leave_6
+  examples: |
+    - What documents are required before rejoining the office?
+    - What documents are required at the date of rejoining the office?
+    - Are there any documents required before rejoining the office?
+    - Are there any documents required at rejoining the office?
